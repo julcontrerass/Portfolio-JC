@@ -482,11 +482,26 @@ body.nav-active { overflow: hidden; }
 
 .hero { padding-block-start: 130px; }
 
-.hero-title {
-  text-transform: uppercase;
-  word-break: break-all;
+.hero-names {
+  display: flex; /* Usa flexbox para alinear horizontalmente */
+  gap: 20px; /* Espacio entre los nombres */
 }
 
+.hero-title {
+  text-transform: uppercase;
+  font-size: 40px; /* Ajusta el tamaño del texto según tus necesidades */
+  font-weight: var(--fw-800);
+  margin: 0; /* Elimina márgenes adicionales */
+}
+.hero-subtitle2 {
+  font-size: var(--fs-8);
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  color: var(--white);
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  font-size: 20px;
+}
 .hero-subtitle {
   font-size: var(--fs-8);
   text-transform: uppercase;
@@ -495,6 +510,7 @@ body.nav-active { overflow: hidden; }
   letter-spacing: 2px;
   line-height: 1.5em;
   margin-block: 10px 30px;
+  font-size: 15px;
 }
 
 .hero-banner {
@@ -542,39 +558,30 @@ body.nav-active { overflow: hidden; }
 
 .service-card {
   position: relative;
-  background-color: var(--white);
+  background-color: var(--raisin-black);
   height: 100%;
   padding: 60px 40px 40px;
   transition: var(--transition-2);
 }
 
 .service-card .card-icon ion-icon {
-  color: var(--content-color, var(--raisin-black));
+  color: var(--content-color, var(--white));
   font-size: 6rem;
   --ionicon-stroke-width: 15px;
 }
 
 .service-card .card-title {
-  color: var(--content-color, var(--raisin-black));
+  color: var(--content-color, var(--white));
   margin-block: 20px;
 }
 
 .service-card .card-text { color: var(--content-color); }
 
-.service-card .card-number {
-  font-size: 20px;
-  font-weight: var(--fw-300);
-  line-height: 1;
-  max-width: max-content;
-  margin-block-start: 10x;
-  -webkit-text-stroke: 1px var(--content-color, var(--black));
-  -webkit-text-fill-color: transparent;
-  opacity: 0.6;
-}
+
 
 .service-card:is(:hover, :focus-within) {
-  background-color: var(--raisin-black);
-  --content-color: var(--white);
+  background-color: var(--white);
+  --content-color: var(--raisin-black);
 }
 
 .row {
@@ -870,6 +877,12 @@ a:hover {
     flex-direction: column;
     text-align: center;
   }
+  .hero-title {
+    text-transform: uppercase;
+    font-size: 30px; /* Ajusta el tamaño del texto según tus necesidades */
+    font-weight: var(--fw-800);
+    margin: 0; /* Elimina márgenes adicionales */
+  }
 }
 /*-----------------------------------*\
   #FOOTER
@@ -906,7 +919,6 @@ footer {
   background: var(--raisin-black);
   height: auto;
   width: 100vw;
-  padding-top: 40px;
   color: #fff;
 }
 .footer-content {

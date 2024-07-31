@@ -476,13 +476,26 @@ body.nav-active { overflow: hidden; }
 
 .hero { padding-block-start: 130px; }
 
-.hero-title {
-  text-transform: uppercase;
-  word-break: break-all;
-  font-size: 40px;
-  font-weight: var(--fw-800);
+.hero-names {
+  display: flex; /* Usa flexbox para alinear horizontalmente */
+  gap: 20px; /* Espacio entre los nombres */
 }
 
+.hero-title {
+  text-transform: uppercase;
+  font-size: 40px; /* Ajusta el tamaño del texto según tus necesidades */
+  font-weight: var(--fw-800);
+  margin: 0; /* Elimina márgenes adicionales */
+}
+.hero-subtitle2 {
+  font-size: var(--fs-8);
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  color: var(--white);
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  font-size: 20px;
+}
 .hero-subtitle {
   font-size: var(--fs-8);
   text-transform: uppercase;
@@ -491,6 +504,7 @@ body.nav-active { overflow: hidden; }
   letter-spacing: 2px;
   line-height: 1.5em;
   margin-block: 10px 30px;
+  font-size: 15px;
 }
 
 .hero-banner {
@@ -538,20 +552,20 @@ body.nav-active { overflow: hidden; }
 
 .service-card {
   position: relative;
-  background-color: var(--white);
+  background-color: var(--raisin-black);
   height: 100%;
   padding: 60px 40px 40px;
   transition: var(--transition-2);
 }
 
 .service-card .card-icon ion-icon {
-  color: var(--content-color, var(--raisin-black));
+  color: var(--content-color, var(--white));
   font-size: 6rem;
   --ionicon-stroke-width: 15px;
 }
 
 .service-card .card-title {
-  color: var(--content-color, var(--raisin-black));
+  color: var(--content-color, var(--white));
   margin-block: 20px;
 }
 
@@ -560,8 +574,8 @@ body.nav-active { overflow: hidden; }
 
 
 .service-card:is(:hover, :focus-within) {
-  background-color: var(--raisin-black);
-  --content-color: var(--white);
+  background-color: var(--white);
+  --content-color: var(--raisin-black);
 }
 
 .row {
@@ -845,49 +859,6 @@ footer {
   margin: 1rem 0 2rem 0;
 }
 
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for large than 575px screen
- */
-
-@media (min-width: 575px) {
-
-  /**
-   * REUSED STYLE
-   */
-
-  .container { 
-    max-width: 570px;
-    width: 100%;
-    margin-inline: auto;
-  }
-
-  .slider { --slider-items: 2; }
-
-
-
-  /**
-   * BLOG
-   */
-
-  .blog-card .card-content {
-    padding-inline: 32px;
-    gap: 32px;
-  }
-
-
-
-  /**
-   * FOOTER
-   */
-
-  .footer-list-title { margin-block-end: 8px; }
-
-}
-
 /* CONTACT */
 
 #contact {
@@ -951,6 +922,12 @@ a:hover {
   .contact-info-container p {
     font-size: medium;
   }
+  .hero-title {
+    text-transform: uppercase;
+    font-size: 30px; /* Ajusta el tamaño del texto según tus necesidades */
+    font-weight: var(--fw-800);
+    margin: 0; /* Elimina márgenes adicionales */
+  }
 }
 
 @media (max-width: 480px) {
@@ -986,6 +963,49 @@ a:hover {
   box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.2);
   transform: scale(110%);
 }
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for large than 575px screen
+ */
+
+@media (min-width: 575px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { 
+    max-width: 570px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .slider { --slider-items: 2; }
+
+
+
+  /**
+   * BLOG
+   */
+
+  .blog-card .card-content {
+    padding-inline: 32px;
+    gap: 32px;
+  }
+
+
+
+  /**
+   * FOOTER
+   */
+
+  .footer-list-title { margin-block-end: 8px; }
+
+}
+
 
 
 
