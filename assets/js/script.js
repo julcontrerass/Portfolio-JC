@@ -32,15 +32,24 @@ const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const overlay = document.querySelector("[data-overlay]");
+const navbarLinks = document.querySelectorAll(".navbar-link");
 
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
   navToggleBtn.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("nav-active");
-}
+};
 
+// Add click event to navbar togglers
 addEventOnElements(navTogglers, "click", toggleNavbar);
+
+// Add click event to navbar links
+addEventOnElements(navbarLinks, "click", function () {
+  if (navbar.classList.contains("active")) {
+    toggleNavbar();
+  }
+});
 
 
 /**
