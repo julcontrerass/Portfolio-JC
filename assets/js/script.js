@@ -42,15 +42,18 @@ const toggleNavbar = function () {
 };
 
 // Add click event to navbar togglers
-addEventOnElements(navTogglers, "click", toggleNavbar);
-
-// Add click event to navbar links
-addEventOnElements(navbarLinks, "click", function () {
-  if (navbar.classList.contains("active")) {
-    toggleNavbar();
-  }
+navTogglers.forEach(toggler => {
+  toggler.addEventListener("click", toggleNavbar);
 });
 
+// Add click event to navbar links
+navbarLinks.forEach(link => {
+  link.addEventListener("click", function () {
+    if (navbar.classList.contains("active")) {
+      toggleNavbar();
+    }
+  });
+});
 
 /**
  * HEADER

@@ -54,53 +54,27 @@
     - #HEADER
   -->
 
-    <header class="header" data-header>
-      <div class="container">
-        <a href="#" class="logo">
-          <img
-          src="/assets/images/JContreras.svg"
-            width="170"
-            height="40"
-            alt="Pfolio home"
-          />
-        </a>
-        <a href="index.html" class="esp">ESP</a> 
-        <a href="index-ing.html" class="eng"> ING</a>
-        <button
-          class="nav-toggle-btn"
-          data-nav-toggler
-          data-nav-toggle-btn
-          aria-label="Toggle menu"
-        >
-          <span class="line line-1"></span>
-          <span class="line line-2"></span>
-          <span class="line line-3"></span>
-        </button>
-
-        <nav class="navbar"  data-navbar>
-          <ul class="navbar-list" id="links">
-            <li>
-              <a href="#" class="navbar-link">Inicio</a>
-            </li>
-
-            <li>
-              <a href="#Educacion" class="navbar-link" >Educacion</a>
-            </li>
-
-            <li>
-              <a href="#TeckSkills" class="navbar-link" >Tech Skills</a>
-            </li>
-
-            <li>
-              <a href="#Portfolio" class="navbar-link" >Portfolio</a>
-            </li>
-
-            
-
-            <li>
-              <a href="#contact" class="navbar-link" >Contacto</a>
-            </li>
-            <ul class="social-list">
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="/assets/images/JContreras.svg" width="170" height="40" alt="Pfolio home" />
+      </a>
+      <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+  
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list" id="links">
+          <li><a href="#" class="navbar-link">Inicio</a></li>
+          <li><a href="#Educacion" class="navbar-link">Educacion</a></li>
+          <li><a href="#TeckSkills" class="navbar-link">Tech Skills</a></li>
+          <li><a href="#Portfolio" class="navbar-link">Portfolio</a></li>
+          <li><a href="#contact" class="navbar-link">Contacto</a></li>
+          <li><a href="index.html" class="esp">ESP</a></li>
+          <li><a href="index-ing.html" class="eng">ING</a></li>
+          <ul class="social-list">
             <li>
               <a href="https://github.com/julcontrerass" class="social-link" target="_blank">
                 <ion-icon name="logo-github"></ion-icon>
@@ -111,83 +85,66 @@
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
-            
-          </ul> 
           </ul>
-        </nav>
-
-        <div class="overlay" data-nav-toggler data-overlay></div>
-      </div>
-    </header>
+        </ul>
+      </nav>
+  
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
 
     <main>
       <article>
         <!-- 
         - #HERO
       -->
-        <section class="section hero" aria-label="home">
-          <div class="container">
-            <div class="hero-content">
-              <h2 class="h2 hero-subtitle2">Hola! Un gusto, Soy</h1>
-                <h1 class="h1 hero-title">Julian</h1>
-                <h1 class="h1 hero-title">Contreras</h1>
-                <p class="hero-subtitle">
+      <section class="section hero" aria-label="home">
+        <div class="container">
+          <div class="hero-content">
+            <h2 class="h2 hero-subtitle2" data-sr="fadeIn">Hola! Un gusto, Soy</h2>
+            <h1 class="h1 hero-title" data-sr="fadeIn">Julian</h1>
+            <h1 class="h1 hero-title" data-sr="fadeIn">Contreras</h1>
+            <p class="hero-subtitle" data-sr="fadeIn">
               Full Stack Web Developer
             </p>
-              
-              
-              <div class="hero-banner">
-                <img
-                  src="./assets/images/hero-banner.jpg"
-                  width="800"
-                  height="800"
-                  alt="kane williams"
-                  class="w-100"
-                />
-              </div>
-
-              <p class= "phero">
-                Con cocimientos en C++, JavaScript, React.js, Node.js, SQL,
-                entre otros.
-              </p>
-              <p class= "phero">
-                Me apasiona crear aplicaciones web o sistemas escalables y de
-                alto rendimiento, Me caracterizo por mi proactividad, empatía y
-                capacidad autodidacta.
-              </p>
-              <p class= "phero">
-                Estoy en constante búsqueda de oportunidades desafiantes en
-                equipos dinámicos donde pueda seguir aprendiendo, creciendo y
-                aportando valor. Mi enfoque está en desarrollar soluciones
-                innovadoras y eficientes, siempre comprometido con la calidad
-                del código y la experiencia del usuario.
-              </p>
-              <p class= "phero">
-                Mi enfoque está en desarrollar soluciones
-                innovadoras y eficientes, siempre comprometido con la calidad
-                del código y la experiencia del usuario
-              </p>
-              <hr />
-             
-              <a
-                href="./assets/images/Julian contreras cv .pdf"
-                class="btn has-before"
-                target="_blank"
-              >
-                <span class="span">Ver CV</span>
-
-                <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-              </a>
-              
-              
+            <div class="hero-banner" data-sr="fadeIn">
+              <img
+                src="./assets/images/hero-banner.jpg"
+                width="800"
+                height="800"
+                alt="kane williams"
+                class="w-100"
+              />
             </div>
+            <p class="phero" data-sr="fadeIn">
+              Con cocimientos en C++, JavaScript, React.js, Node.js, SQL, entre otros.
+            </p>
+            <p class="phero" data-sr="fadeIn">
+              Me apasiona crear aplicaciones web o sistemas escalables y de alto rendimiento, Me caracterizo por mi proactividad, empatía y capacidad autodidacta.
+            </p>
+            <p class="phero" data-sr="fadeIn">
+              Estoy en constante búsqueda de oportunidades desafiantes en equipos dinámicos donde pueda seguir aprendiendo, creciendo y aportando valor. Mi enfoque está en desarrollar soluciones innovadoras y eficientes, siempre comprometido con la calidad del código y la experiencia del usuario.
+            </p>
+            <p class="phero" data-sr="fadeIn">
+              Mi enfoque está en desarrollar soluciones innovadoras y eficientes, siempre comprometido con la calidad del código y la experiencia del usuario
+            </p>
+            <hr data-sr="fadeIn"/>
+            <a
+              href="./assets/images/Julian contreras cv .pdf"
+              class="btn has-before"
+              target="_blank"
+              data-sr="fadeIn"
+            >
+              <span class="span">Ver CV</span>
+              <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+            </a>
           </div>
-        </section>
+        </div>
+      </section>
 
         <!-- 
         - #SERVICE
       -->
-
         <section class="service" id="Educacion" aria-labelledby="service-label">
           <div class="container">
             <div class="title-wrapper">
@@ -202,15 +159,15 @@
                   <div class="year">
                      Marzo 2024 - Diciembre 2025
                   </div>
-                  <h4>Universidad Tecnológica Nacional (UTN)</h4>
-                  <p>Tecnicatura univercitaria en programacion</p>
+                  <h4>Tecnicatura universitaria en programacionUniversidad Tecnológica Nacional (UTN)</h4>
+                  <p>Universidad Tecnológica Nacional (UTN)</p>
                 </div>
                 <div class="box">
                   <div class="year">
                      11 Septiembre - 2 octubre 2023
                   </div>
-                  <h4>Soy henry</h4>
-                  <p>Arquitectura de microservicios y Bases de Datos NoSQL</p>
+                  <h4>Arquitectura de microservicios y Bases de Datos NoSQLSoy henry</h4>
+                  <p>Soy Henry</p>
                   <a href="/assets/images/certificatebackend.pdf" class="botton"
                     >Ver Certificado</a
                   >
@@ -219,16 +176,16 @@
                   <div class="year">
                     21 Junio - 20 septiembre 2023  
                   </div>
-                  <h4>CoderHouse</h4>
-                  <p>JavaScript</p>
+                  <h4>JavaScript</h4>
+                  <p>CoderHouse</p>
                   <a href="/assets/images/titulo.pdf" class="botton">Ver Certificado</a>
                 </div>
                 <div class="box">
                   <div class="year">
                      5 Diciembre 2022 - 7 Abril 2023
                   </div>
-                  <h4>Soy Henry</h4>
-                  <p>Full Stack Developer</p>
+                  <h4>Full Stack Web Developer</h4>
+                  <p>Soy Henry</p>
                   <a href="/assets/images/certificate.pdf" class="botton">Ver Certificado</a>
                 </div>
               </div>
