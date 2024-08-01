@@ -1027,22 +1027,19 @@ footer {
 }
 /* CONTACT */
 
-#contact {
+#contact #contact-info {
   display: flex;
   flex-direction: column;
-  padding-bottom: 2rem; /* Añade espacio debajo de la sección de contacto */
-  padding: 12px;
+  height: 60vh;
 }
-
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  background: rgba(250, 250, 250, 0);
+  background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
-
 .contact-info-container {
   display: flex;
   align-items: center;
@@ -1054,12 +1051,10 @@ footer {
 .contact-info-container p {
   font-size: larger;
 }
-
 .icon {
   cursor: pointer;
   height: 2rem;
 }
-
 .contact-icon {
   cursor: default;
 }
@@ -1067,17 +1062,48 @@ footer {
 .email-icon {
   height: 2.5rem;
 }
-
 a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   text-decoration-color: white;
 }
-
 a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(255, 255, 255);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contact-info-upper-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .contact-info-container {
+    margin: 0.5rem 0;
+  }
+
+  .contact-info-container p {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info-container p {
+    font-size: small;
+  }
+
+  .contact-info-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-title {
+    text-transform: uppercase;
+    font-size: 30px; 
+    font-weight: var(--fw-800);
+    margin: 0; 
+  }
 }
 
 /* Form styles */
@@ -1092,7 +1118,6 @@ a:hover {
   
 }
 
-/* Posicionamiento y estilos base para el form-group y sus elementos */
 .form-group {
   position: relative;
   margin-bottom: 1.5rem;
@@ -1134,7 +1159,6 @@ a:hover {
   background-color: #17181C;
 }
 
-/* Otros estilos de formulario */
 #contact {
   display: flex;
   flex-direction: column;
@@ -1152,7 +1176,6 @@ a:hover {
   background: rgba(0, 0, 0, 0);
 }
 
-/* Estilos de los form-group y sus elementos */
 .form-group {
   position: relative;
   margin-bottom: 4rem;
@@ -1197,7 +1220,6 @@ a:hover {
   background-color:#17181C;
 }
 
-/* Estilos del botón */
 .button {
   display: inline-block;
   text-decoration: none;
@@ -1217,7 +1239,6 @@ a:hover {
   color: #ffffff;
 }
 
-/* Media queries para pantallas más pequeñas */
 @media (max-width: 768px) {
   .contact-form-container {
     padding: 1rem;
