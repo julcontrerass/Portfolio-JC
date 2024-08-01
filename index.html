@@ -14,7 +14,10 @@
       name="description"
       content="This is a personal portfolio html template made by codewithsadee"
     />
-
+    <!-- 
+    - SweetAlert2.js
+  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- 
     - favicon
   -->
@@ -54,93 +57,125 @@
     - #HEADER
   -->
 
-  <header class="header" data-header>
-    <div class="container">
-      <a href="#" class="logo">
-        <img src="/assets/images/JContreras.svg" width="170" height="40" alt="Pfolio home" />
-      </a>
-      <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
-        <span class="line line-1"></span>
-        <span class="line line-2"></span>
-        <span class="line line-3"></span>
-      </button>
-  
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list" id="links">
-          <li><a href="#" class="navbar-link">Inicio</a></li>
-          <li><a href="#Educacion" class="navbar-link">Educacion</a></li>
-          <li><a href="#TeckSkills" class="navbar-link">Tech Skills</a></li>
-          <li><a href="#Portfolio" class="navbar-link">Portfolio</a></li>
-          <li><a href="#contact" class="navbar-link">Contacto</a></li>
-          <li><a href="index.html" class="esp">ESP</a></li>
-          <li><a href="index-ing.html" class="eng">ING</a></li>
-          <ul class="social-list">
-            <li>
-              <a href="https://github.com/julcontrerass" class="social-link" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/juliancontreraslucero/" class="social-link" target="_blank">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="/assets/images/JContreras.svg"
+            width="170"
+            height="40"
+            alt="Pfolio home"
+          />
+        </a>
+        <button
+          class="nav-toggle-btn"
+          data-nav-toggler
+          data-nav-toggle-btn
+          aria-label="Toggle menu"
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list" id="links">
+            <li><a href="#" class="navbar-link">Inicio</a></li>
+            <li><a href="#Educacion" class="navbar-link">Educacion</a></li>
+            <li><a href="#TeckSkills" class="navbar-link">Tech Skills</a></li>
+            <li><a href="#Portfolio" class="navbar-link">Portfolio</a></li>
+            <li><a href="#contact" class="navbar-link">Contacto</a></li>
+            <li><a href="index.html" class="esp">ESP</a></li>
+            <li><a href="index-ing.html" class="eng">ING</a></li>
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://github.com/julcontrerass"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/juliancontreraslucero/"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
           </ul>
-        </ul>
-      </nav>
-  
-      <div class="overlay" data-nav-toggler data-overlay></div>
-    </div>
-  </header>
+        </nav>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
 
     <main>
       <article>
         <!-- 
         - #HERO
       -->
-      <section class="section hero" aria-label="home">
-        <div class="container">
-          <div class="hero-content">
-            <h2 class="h2 hero-subtitle2" data-sr="fadeIn">Hola! Un gusto, Soy</h2>
-            <h1 class="h1 hero-title" data-sr="fadeIn">Julian</h1>
-            <h1 class="h1 hero-title" data-sr="fadeIn">Contreras</h1>
-            <p class="hero-subtitle" data-sr="fadeIn">
-              Full Stack Web Developer
-            </p>
-            <div class="hero-banner" data-sr="fadeIn">
-              <img
-                src="./assets/images/hero-banner.jpg"
-                width="800"
-                height="800"
-                alt="kane williams"
-                class="w-100"
-              />
+        <section class="section hero" aria-label="home">
+          <div class="container">
+            <div class="hero-content">
+              <h2 class="h2 hero-subtitle2" data-sr="fadeIn">
+                Hola! Un gusto, Soy
+              </h2>
+              <h1 class="h1 hero-title" data-sr="fadeIn">Julian</h1>
+              <h1 class="h1 hero-title" data-sr="fadeIn">Contreras</h1>
+              <p class="hero-subtitle" data-sr="fadeIn">
+                Full Stack Web Developer
+              </p>
+              <div class="hero-banner" data-sr="fadeIn">
+                <img
+                  src="./assets/images/hero-banner.jpg"
+                  width="800"
+                  height="800"
+                  alt="kane williams"
+                  class="w-100"
+                />
+              </div>
+              <p class="phero" data-sr="fadeIn">
+                Con cocimientos en C++, JavaScript, React.js, Node.js, SQL,
+                entre otros.
+              </p>
+              <p class="phero" data-sr="fadeIn">
+                Me apasiona crear aplicaciones web o sistemas escalables y de
+                alto rendimiento, Me caracterizo por mi proactividad, empatía y
+                capacidad autodidacta.
+              </p>
+              <p class="phero" data-sr="fadeIn">
+                Estoy en constante búsqueda de oportunidades desafiantes en
+                equipos dinámicos donde pueda seguir aprendiendo, creciendo y
+                aportando valor. Mi enfoque está en desarrollar soluciones
+                innovadoras y eficientes, siempre comprometido con la calidad
+                del código y la experiencia del usuario.
+              </p>
+              <p class="phero" data-sr="fadeIn">
+                Mi enfoque está en desarrollar soluciones innovadoras y
+                eficientes, siempre comprometido con la calidad del código y la
+                experiencia del usuario
+              </p>
+              <hr data-sr="fadeIn" />
+              <a
+                href="./assets/images/Julian contreras cv .pdf"
+                class="btn has-before"
+                target="_blank"
+                data-sr="fadeIn"
+              >
+                <span class="span">Ver CV</span>
+                <ion-icon
+                  name="document-text-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
             </div>
-            <p class="phero" data-sr="fadeIn">
-              Con cocimientos en C++, JavaScript, React.js, Node.js, SQL, entre otros.
-            </p>
-            <p class="phero" data-sr="fadeIn">
-              Me apasiona crear aplicaciones web o sistemas escalables y de alto rendimiento, Me caracterizo por mi proactividad, empatía y capacidad autodidacta.
-            </p>
-            <p class="phero" data-sr="fadeIn">
-              Estoy en constante búsqueda de oportunidades desafiantes en equipos dinámicos donde pueda seguir aprendiendo, creciendo y aportando valor. Mi enfoque está en desarrollar soluciones innovadoras y eficientes, siempre comprometido con la calidad del código y la experiencia del usuario.
-            </p>
-            <p class="phero" data-sr="fadeIn">
-              Mi enfoque está en desarrollar soluciones innovadoras y eficientes, siempre comprometido con la calidad del código y la experiencia del usuario
-            </p>
-            <hr data-sr="fadeIn"/>
-            <a
-              href="./assets/images/Julian contreras cv .pdf"
-              class="btn has-before"
-              target="_blank"
-              data-sr="fadeIn"
-            >
-              <span class="span">Ver CV</span>
-              <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-            </a>
           </div>
-        </div>
-      </section>
+        </section>
 
         <!-- 
         - #SERVICE
@@ -156,37 +191,39 @@
             <div class="row">
               <div class="column">
                 <div class="box">
-                  <div class="year">
-                     Marzo 2024 - Diciembre 2025
-                  </div>
-                  <h4>Tecnicatura universitaria en programacionUniversidad Tecnológica Nacional (UTN)</h4>
+                  <div class="year">Marzo 2024 - Diciembre 2025</div>
+                  <h4>
+                    Tecnicatura universitaria en programacionUniversidad
+                    Tecnológica Nacional (UTN)
+                  </h4>
                   <p>Universidad Tecnológica Nacional (UTN)</p>
                 </div>
                 <div class="box">
-                  <div class="year">
-                     11 Septiembre - 2 octubre 2023
-                  </div>
-                  <h4>Arquitectura de microservicios y Bases de Datos NoSQLSoy henry</h4>
+                  <div class="year">11 Septiembre - 2 octubre 2023</div>
+                  <h4>
+                    Arquitectura de microservicios y Bases de Datos NoSQLSoy
+                    henry
+                  </h4>
                   <p>Soy Henry</p>
                   <a href="/assets/images/certificatebackend.pdf" class="botton"
                     >Ver Certificado</a
                   >
                 </div>
                 <div class="box">
-                  <div class="year">
-                    21 Junio - 20 septiembre 2023  
-                  </div>
+                  <div class="year">21 Junio - 20 septiembre 2023</div>
                   <h4>JavaScript</h4>
                   <p>CoderHouse</p>
-                  <a href="/assets/images/titulo.pdf" class="botton">Ver Certificado</a>
+                  <a href="/assets/images/titulo.pdf" class="botton"
+                    >Ver Certificado</a
+                  >
                 </div>
                 <div class="box">
-                  <div class="year">
-                     5 Diciembre 2022 - 7 Abril 2023
-                  </div>
+                  <div class="year">5 Diciembre 2022 - 7 Abril 2023</div>
                   <h4>Full Stack Web Developer</h4>
                   <p>Soy Henry</p>
-                  <a href="/assets/images/certificate.pdf" class="botton">Ver Certificado</a>
+                  <a href="/assets/images/certificate.pdf" class="botton"
+                    >Ver Certificado</a
+                  >
                 </div>
               </div>
             </div>
@@ -196,104 +233,107 @@
         <!-- 
         - #SKILLS
       -->
-      <section class="service" id="TeckSkills" aria-labelledby="service-label">
-        <div class="container">
+        <section
+          class="service"
+          id="TeckSkills"
+          aria-labelledby="service-label"
+        >
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <p class="section-subtitle">Tecnologias</p>
 
-          <div class="title-wrapper">
+                <h2 class="h2 section-title" id="service-label">Tech Skills</h2>
+              </div>
+            </div>
+            <div class="slider" data-slider>
+              <ul class="slider-container service-list" data-slider-container>
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="desktop-outline"></ion-icon>
+                    </div>
 
-            <div>
-              <p class="section-subtitle">
-                Tecnologias
-              </p>
+                    <h3 class="h3 card-title">
+                      Front End
+                      <hr />
+                    </h3>
 
-              <h2 class="h2 section-title" id="service-label">Tech Skills</h2>
+                    <p class="card-text">
+                      Html5 | Css | Ajax | React Js | React Native | Redux |
+                      Hooks | Javascript
+                    </p>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="code-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      Back End
+                      <hr />
+                    </h3>
+
+                    <p class="card-text">C++ | NODEJS | SEQUELIZE | EXPRESS</p>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="server-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      Base De Datos
+                      <hr />
+                    </h3>
+
+                    <p class="card-text">MongoDB | PostgreSQL | Firebase</p>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="construct-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      Herramientas
+                      <hr />
+                    </h3>
+
+                    <p class="card-text">Jira | Git | VSCode | Code::Block</p>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="slider-controls">
+                <button
+                  class="slider-control prev"
+                  data-slider-prev
+                  aria-label="Slide to previous item"
+                >
+                  <div class="line"></div>
+                  <div class="arrow"></div>
+                </button>
+                <button
+                  class="slider-control next"
+                  data-slider-next
+                  aria-label="Slide to next item"
+                >
+                  <div class="line"></div>
+                  <div class="arrow"></div>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="slider" data-slider>
+        </section>
 
-            <ul class="slider-container service-list" data-slider-container>
-
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="desktop-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">Front End<hr /></h3>
-
-                  <p class="card-text">
-                    Html5 | Css | Ajax | React Js | React Native | Redux | Hooks | Javascript
-                  </p>
-                </div>
-              </li>
-
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="code-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">Back End <hr /></h3>
-
-                  <p class="card-text">
-                    C++ | NODEJS | SEQUELIZE | EXPRESS 
-                  </p>
-
-
-                </div>
-              </li>
-
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="server-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">Base De Datos <hr /></h3>
-                  
-                  <p class="card-text">
-                    MongoDB | PostgreSQL | Firebase
-                  </p>
-                </div>
-              </li>
-
-              
-
-              
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="construct-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">Herramientas <hr /></h3>
-
-                  <p class="card-text">
-                   Jira | Git | VSCode | Code::Block
-                  </p>
-                </div>
-              </li>
-
-            </ul>
-
-            <div class="slider-controls">
-              <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
-                <div class="line"></div>
-                <div class="arrow"></div>
-              </button>
-              <button class="slider-control next" data-slider-next aria-label="Slide to next item">
-                <div class="line"></div>
-                <div class="arrow"></div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-        
         <div class="slider">
           <div class="slide-track">
             <div class="slide">
@@ -351,10 +391,12 @@
         - #PORTFOLIO
       -->
 
-        
-
-        <section class="section blog" aria-labelledby="blog-label" id="Portfolio"  >
-          <div class="container" > 
+        <section
+          class="section blog"
+          aria-labelledby="blog-label"
+          id="Portfolio"
+        >
+          <div class="container">
             <p class="section-subtitle" id="blog-label">MIS PROYECTOS</p>
 
             <h2 class="h2 section-title">Portfolio</h2>
@@ -482,7 +524,7 @@
                       <span class="span text-lg">2023</span>
                       Marzo - Abril
                     </time>
-                    
+
                     <div>
                       <h3 class="h3 card-title">E-commerce Nike</h3>
                       <p class="card-text">Trabajo final grupal de Henry</p>
@@ -542,7 +584,12 @@
                       <h3 class="h3 section-title">Countries</h3>
                       <p class="card-text">Proyecto individual Henry</p>
                       <p class="card-text">
-                        Proyecto individual usando la api Countries, el proyecto consiste en poder visualizar todas las banderas de los países, en él ver la información de cada una de ellas y poder crear una actividad para realizar en cualquier país deseado. En este proyecto se utilizo React, Redux, NodeJs, Express, Sequelize y SQL
+                        Proyecto individual usando la api Countries, el proyecto
+                        consiste en poder visualizar todas las banderas de los
+                        países, en él ver la información de cada una de ellas y
+                        poder crear una actividad para realizar en cualquier
+                        país deseado. En este proyecto se utilizo React, Redux,
+                        NodeJs, Express, Sequelize y SQL
                       </p>
 
                       <a
@@ -561,73 +608,126 @@
           </div>
         </section>
 
-
-      
         <section id="contact">
-          <div class="container" > 
-          <p class="section-subtitle" id="blog-label">Comunicate conmigo</p>
-
+          <div class="container">
+            <p class="section-subtitle" id="blog-label">Comunicate conmigo</p>
             <h2 class="h2 section-title">Contactarme</h2>
             <p class="card-text">
-              Te invito a que conectemos y si queres comunicate conmigo</p>
-          <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-              <li>
-                <a href="mailto:jjulian.contrerass@gmail" class="social-link"
-                  ><ion-icon name="mail-outline"></ion-icon></a>
-              </li>
-              <p><a href="mailto:jjulian.contrerass@gmail">jjulian.contrerass@gmail.com</a></p>
+              Te invito a que conectemos y si queres comunicate conmigo
+            </p>
+            <div class="contact-form-container">
+              <form
+                id="contactForm"
+                action="https://formsubmit.co/jjulian.contrerass@gmail.com"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Nuevo mensaje del formulario de contacto"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder=" "
+                  />
+                  <label for="name">Nombre:</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder=" "
+                  />
+                  <label for="email">Email:</label>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder=" "
+                  ></textarea>
+                  <label for="message">Mensaje:</label>
+                </div>
+                <button type="submit" class="button">Enviar</button>
+              </form>
             </div>
-            <div class="contact-info-container">
-              <li>
-                <a href="https://www.linkedin.com/in/juliancontreraslucero/"  class="social-link"
-                  ><ion-icon name="logo-linkedin"></ion-icon></i
-                ></a>
-              </li>
-              <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-            </div>
-            <div class="contact-info-container">
-              <li>
-                <a href="https://api.whatsapp.com/send?phone=1164602560"  class="social-link"
-                  ><ion-icon name="logo-whatsapp"></ion-icon></i
-                ></a>
-              </li>
-              <p><a href="https://api.whatsapp.com/send?phone=1164602560">WhatsApp</a></p>
-            </div>
-          </div>
           </div>
         </section>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <li>
+              <a href="mailto:jjulian.contrerass@gmail" class="social-link"
+                ><ion-icon name="mail-outline"></ion-icon
+              ></a>
+            </li>
+            <p>
+              <a href="mailto:jjulian.contrerass@gmail"
+                >jjulian.contrerass@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/juliancontreraslucero/"
+                class="social-link"
+                ><ion-icon name="logo-linkedin"></ion-icon
+              ></a>
+            </li>
+            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+          <div class="contact-info-container">
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=1164602560"
+                class="social-link"
+                ><ion-icon name="logo-whatsapp"></ion-icon
+              ></a>
+            </li>
+            <p>
+              <a href="https://api.whatsapp.com/send?phone=1164602560"
+                >WhatsApp</a
+              >
+            </p>
+          </div>
+        </div>
       </article>
     </main>
     <!-- 
     - #FOOTER
   -->
-    
-      <footer>
-        <div class="footer-content">
-          <p>
-            copyright &copy;2024 Portfolio. by <span>Julian contreras</span>
-          </p>
-        </div>
-      </footer>
-    
-     <!-- 
+
+    <footer>
+      <div class="footer-content">
+        <p>copyright &copy;2024 Portfolio. by <span>Julian contreras</span></p>
+      </div>
+    </footer>
+
+    <!-- 
     - #Whatsapp
   -->
-  <div>
-    <a
-      href="https://api.whatsapp.com/send?phone=1164602560"
-      class="whatsapp_float"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      
-      
-      <ion-icon name="logo-whatsapp"></ion-icon>
-    </a>
-  </div>
-  <!-- ----- TYPING JS Link ----- -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <div>
+      <a
+        href="https://api.whatsapp.com/send?phone=1164602560"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+    </div>
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- 
     - custom js link
   -->
@@ -644,8 +744,5 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-
-       <!-- ----- SCROLL REVEAL JS Link----- -->
-       <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>
