@@ -152,6 +152,9 @@ body.nav-active { overflow: hidden; }
 \*-----------------------------------*/
 
 .container { padding-inline: 12px; }
+.separation{
+  padding-top: 100px;
+}
 
 /* .section { padding-block: var(--section-padding); } */
 
@@ -544,7 +547,9 @@ body.nav-active { overflow: hidden; }
   #HERO
 \*-----------------------------------*/
 
-.hero { padding-block-start: 130px; }
+.hero { 
+  padding-block-start: 130px;
+ }
 
 .hero-names {
   display: flex; /* Usa flexbox para alinear horizontalmente */
@@ -864,6 +869,7 @@ body.nav-active { overflow: hidden; }
 }
 
 .blog-card .card-text { margin-block: 20px; }
+
 
 
 /* CONTACT */

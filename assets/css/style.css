@@ -152,7 +152,9 @@ body.nav-active { overflow: hidden; }
 \*-----------------------------------*/
 
 .container { padding-inline: 12px; }
-
+.separation{
+  padding-top: 100px;
+}
 .section { padding-block: var(--section-padding); }
 
 .h1 {
@@ -611,41 +613,9 @@ body.nav-active { overflow: hidden; }
 
 .hero .btn { margin-inline: auto; }
 
-
-
-
-
 /*-----------------------------------*\
-  #SERVICE
+  #EDUCATION
 \*-----------------------------------*/
-
-.service-card {
-  position: relative;
-  background-color: var(--raisin-black);
-  height: 100%;
-  padding: 60px 40px 40px;
-  transition: var(--transition-2);
-}
-
-.service-card .card-icon ion-icon {
-  color: var(--content-color, var(--white));
-  font-size: 6rem;
-  --ionicon-stroke-width: 15px;
-}
-
-.service-card .card-title {
-  color: var(--content-color, var(--white));
-  margin-block: 20px;
-}
-
-.service-card .card-text { color: var(--content-color); }
-
-
-
-.service-card:is(:hover, :focus-within) {
-  background-color: var(--white);
-  --content-color: var(--raisin-black);
-}
 
 .row {
   display: flex;
@@ -724,36 +694,36 @@ body.nav-active { overflow: hidden; }
   color: #ffffff;
 }
 
-
-
-
 /*-----------------------------------*\
-  #SKILLS
+  #TECH SKILLS
 \*-----------------------------------*/
 
-.skills .section-text { margin-block-end: 20px; }
-
-.skills .btn { margin-block: 45px; }
-
-.skills-list li:not(:last-child) { margin-block-end: 30px; }
-
-.progress-wrapper {
-  display: flex;
-  justify-content: space-between;
-  font-weight: var(--fw-700);
-  margin-block-end: 5px;
-}
-
-.progress-bg {
-  height: 6px;
+.service-card {
+  position: relative;
   background-color: var(--raisin-black);
-  border-radius: var(--radius-pill);
+  height: 100%;
+  padding: 60px 40px 40px;
+  transition: var(--transition-2);
 }
 
-.progress {
-  height: inherit;
+.service-card .card-icon ion-icon {
+  color: var(--content-color, var(--white));
+  font-size: 6rem;
+  --ionicon-stroke-width: 15px;
+}
+
+.service-card .card-title {
+  color: var(--content-color, var(--white));
+  margin-block: 20px;
+}
+
+.service-card .card-text { color: var(--content-color); }
+
+
+
+.service-card:is(:hover, :focus-within) {
   background-color: var(--white);
-  border-radius: inherit;
+  --content-color: var(--raisin-black);
 }
 
 .slider {
@@ -863,8 +833,6 @@ body.nav-active { overflow: hidden; }
 }
 
 .blog-card .card-text { margin-block: 20px; }
-
-
 
 
 
