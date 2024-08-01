@@ -6,7 +6,9 @@ const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
   }
-};
+}
+
+
 
 /**
  * PRELOADER
@@ -19,6 +21,8 @@ window.addEventListener("DOMContentLoaded", function () {
   document.body.classList.add("loaded");
 });
 
+
+
 /**
  * NAVBAR
  * navbar toggle for mobile
@@ -28,28 +32,17 @@ const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const overlay = document.querySelector("[data-overlay]");
-const navbarLinks = document.querySelectorAll(".navbar-link");
 
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
   navToggleBtn.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("nav-active");
-};
+}
 
-// Add click event to navbar togglers
-navTogglers.forEach((toggler) => {
-  toggler.addEventListener("click", toggleNavbar);
-});
+addEventOnElements(navTogglers, "click", toggleNavbar);
 
-// Add click event to navbar links
-navbarLinks.forEach((link) => {
-  link.addEventListener("click", function () {
-    if (navbar.classList.contains("active")) {
-      toggleNavbar();
-    }
-  });
-});
+
 
 /**
  * HEADER
@@ -66,6 +59,8 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
+
 /**
  * SLIDER
  */
@@ -73,23 +68,19 @@ window.addEventListener("scroll", function () {
 const sliders = document.querySelectorAll("[data-slider]");
 
 const initSlider = function (currentSlider) {
-  const sliderContainer = currentSlider.querySelector(
-    "[data-slider-container]"
-  );
+
+  const sliderContainer = currentSlider.querySelector("[data-slider-container]");
   const sliderPrevBtn = currentSlider.querySelector("[data-slider-prev]");
   const sliderNextBtn = currentSlider.querySelector("[data-slider-next]");
 
-  let totalSliderVisibleItems = Number(
-    getComputedStyle(currentSlider).getPropertyValue("--slider-items")
-  );
-  let totalSlidableItems =
-    sliderContainer.childElementCount - totalSliderVisibleItems;
+  let totalSliderVisibleItems = Number(getComputedStyle(currentSlider).getPropertyValue("--slider-items"));
+  let totalSlidableItems = sliderContainer.childElementCount - totalSliderVisibleItems;
 
   let currentSlidePos = 0;
 
   const moveSliderItem = function () {
     sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
-  };
+  }
 
   /**
    * NEXT SLIDE
@@ -104,7 +95,7 @@ const initSlider = function (currentSlider) {
     }
 
     moveSliderItem();
-  };
+  }
 
   sliderNextBtn.addEventListener("click", slideNext);
 
@@ -119,14 +110,14 @@ const initSlider = function (currentSlider) {
     }
 
     moveSliderItem();
-  };
+  }
 
   sliderPrevBtn.addEventListener("click", slidePrev);
 
   const dontHaveExtraItem = totalSlidableItems <= 0;
   if (dontHaveExtraItem) {
-    sliderNextBtn.style.display = "none";
-    sliderPrevBtn.style.display = "none";
+    sliderNextBtn.style.display = 'none';
+    sliderPrevBtn.style.display = 'none';
   }
 
   /**
@@ -143,20 +134,15 @@ const initSlider = function (currentSlider) {
    */
 
   window.addEventListener("resize", function () {
-    totalSliderVisibleItems = Number(
-      getComputedStyle(currentSlider).getPropertyValue("--slider-items")
-    );
-    totalSlidableItems =
-      sliderContainer.childElementCount - totalSliderVisibleItems;
+    totalSliderVisibleItems = Number(getComputedStyle(currentSlider).getPropertyValue("--slider-items"));
+    totalSlidableItems = sliderContainer.childElementCount - totalSliderVisibleItems;
 
     moveSliderItem();
   });
-};
 
-for (let i = 0, len = sliders.length; i < len; i++) {
-  initSlider(sliders[i]);
 }
 
+for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
 
 /**
@@ -202,9 +188,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/**
- *  ScrollReveal
- */
+// /**
+//  *  ScrollReveal
+//  */
 
 document.addEventListener("DOMContentLoaded", function () {
   ScrollReveal().reveal(".blog-card", {
@@ -213,13 +199,6 @@ document.addEventListener("DOMContentLoaded", function () {
     distance: "50px", // Distancia que recorrerá el elemento
     delay: 200, // Retraso antes de que la animación comience
     reset: true, // Si deseas que la animación se repita al hacer scroll
-  });
-  ScrollReveal().reveal(".service-card", {
-    duration: 1000,
-    origin: "bottom",
-    distance: "50px",
-    delay: 200,
-    reset: true,
   });
   ScrollReveal().reveal(".reveal", {
     duration: 1000,
