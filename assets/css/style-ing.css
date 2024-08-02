@@ -151,7 +151,10 @@ body.nav-active { overflow: hidden; }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 12px; }
+.container { padding-inline: 20px; }
+.separation {
+  padding-top: 100px;
+}
 
 .section { padding-block: var(--section-padding); }
 
@@ -1360,21 +1363,6 @@ a:hover {
  */
 
 @media (min-width: 1200px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
-  :root {
-
-    /**
-     * spacing
-     */
-
-    --section-padding: 140px;
-
-  }
-
 
 
   /**
