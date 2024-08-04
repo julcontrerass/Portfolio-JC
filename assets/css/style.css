@@ -1,15 +1,6 @@
 /*-----------------------------------*\
-  #main.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-/*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
-
 :root {
   /**
    * colors
@@ -247,6 +238,9 @@ body.nav-active {
   font-weight: var(--fw-700);
   margin-block-end: 20px;
   letter-spacing: 2px;
+}
+.section-position{
+  text-align: center;
 }
 
 .section-title {
@@ -570,15 +564,15 @@ body.nav-active {
 }
 
 .hero-names {
-  display: flex; /* Usa flexbox para alinear horizontalmente */
-  gap: 20px; /* Espacio entre los nombres */
+  display: flex; 
+  gap: 20px;
 }
 
 .hero-title {
   text-transform: uppercase;
-  font-size: 40px; /* Ajusta el tamaño del texto según tus necesidades */
+  font-size: 40px; 
   font-weight: var(--fw-800);
-  margin: 0; /* Elimina márgenes adicionales */
+  margin: 0; 
 }
 .hero-subtitle2 {
   font-size: var(--fs-8);
@@ -887,9 +881,14 @@ body.nav-active {
 .social-list {
   display: flex;
   gap: 10px;
-  padding: 5px;
+  padding-left: 20px;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 1201px) {
+  .social-list {
+    padding-left: 0px;
+  }
 }
 
 .social-link {

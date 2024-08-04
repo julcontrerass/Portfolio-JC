@@ -1,16 +1,4 @@
 /*-----------------------------------*\
-  #main.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
@@ -234,6 +222,10 @@ body.nav-active { overflow: hidden; }
 }
 
 .section-title { margin-block-end: 45px; }
+
+.section-position{
+  text-align: center;
+}
 
 .text-lg {
   font-family: var(--ff-syne);
@@ -532,7 +524,7 @@ body.nav-active { overflow: hidden; }
     visibility: visible;
     padding: 0;
   }
-
+  
   .navbar-list {
     display: flex;
   }
@@ -837,16 +829,20 @@ body.nav-active { overflow: hidden; }
 
 
 
-/* seccion F O O T E R */
+/*  F O O T E R */
 /* *********************/
 .social-list {
   display: flex;
   gap: 10px;
-  padding: 5PX;
+  padding-left: 20px;
   align-items: center;
   justify-content: center;
 }
-
+@media (max-width: 1201px) {
+  .social-list {
+    padding-left: 0px;
+  }
+}
 .social-link {
   width: 45px;
   height: 45px;
@@ -858,7 +854,7 @@ body.nav-active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.social-link:is(:hover, :focus-visible) { border-color: var(--white); }
+.social-link:is(:hover, :focus-visible) { border-color: var(--white);  }
 
 footer {
   bottom: 0;
