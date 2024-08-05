@@ -535,21 +535,23 @@ body.nav-active { overflow: hidden; }
 }
 
 /*-----------------------------------*\
-  #HERO
+  #Home
 \*-----------------------------------*/
 
-.hero { padding-block-start: 130px; }
+.hero {
+  padding-block-start: 130px;
+}
 
 .hero-names {
-  display: flex; /* Usa flexbox para alinear horizontalmente */
-  gap: 20px; /* Espacio entre los nombres */
+  display: flex; 
+  gap: 20px;
 }
 
 .hero-title {
   text-transform: uppercase;
-  font-size: 40px; /* Ajusta el tamaño del texto según tus necesidades */
+  font-size: 40px; 
   font-weight: var(--fw-800);
-  margin: 0; /* Elimina márgenes adicionales */
+  margin: 0; 
 }
 .hero-subtitle2 {
   font-size: var(--fs-8);
@@ -578,34 +580,55 @@ body.nav-active { overflow: hidden; }
 }
 
 @keyframes blobAnim {
-
   0%,
-  100% { border-radius: var(--blob-radius); }
+  100% {
+    border-radius: var(--blob-radius);
+  }
 
-  10% { border-radius: 33% 67% 50% 50% / 43% 39% 61% 57%; }
+  10% {
+    border-radius: 33% 67% 50% 50% / 43% 39% 61% 57%;
+  }
 
-  20% { border-radius: 51% 49% 31% 69% / 65% 39% 61% 35%; }
+  20% {
+    border-radius: 51% 49% 31% 69% / 65% 39% 61% 35%;
+  }
 
-  30% { border-radius: 51% 49% 56% 44% / 45% 39% 61% 55%; }
+  30% {
+    border-radius: 51% 49% 56% 44% / 45% 39% 61% 55%;
+  }
 
-  40% { border-radius: 66% 34% 33% 67% / 48% 71% 39% 52%; }
+  40% {
+    border-radius: 66% 34% 33% 67% / 48% 71% 39% 52%;
+  }
 
-  50% { border-radius: 46% 54% 33% 67% / 48% 30% 70% 52%; }
+  50% {
+    border-radius: 46% 54% 33% 67% / 48% 30% 70% 52%;
+  }
 
-  60% { border-radius: 46% 54% 56% 44% / 48% 30% 70% 52%; }
+  60% {
+    border-radius: 46% 54% 56% 44% / 48% 30% 70% 52%;
+  }
 
-  70% { border-radius: 46% 54% 56% 44% / 65% 53% 47% 35%; }
+  70% {
+    border-radius: 46% 54% 56% 44% / 65% 53% 47% 35%;
+  }
 
-  80% { border-radius: 67% 33% 56% 44% / 37% 53% 47% 63%; }
+  80% {
+    border-radius: 67% 33% 56% 44% / 37% 53% 47% 63%;
+  }
 
-  90% { border-radius: 46% 54% 32% 68% / 37% 53% 47% 63%; }
-
+  90% {
+    border-radius: 46% 54% 32% 68% / 37% 53% 47% 63%;
+  }
 }
 
-.hero .section-text { margin-block: 30px; }
+.hero .section-text {
+  margin-block: 30px;
+}
 
-.hero .btn { margin-inline: auto; }
-
+.hero .btn {
+  margin-inline: auto;
+}
 /*-----------------------------------*\
   #EDUCATION
 \*-----------------------------------*/
@@ -759,48 +782,6 @@ body.nav-active { overflow: hidden; }
   #PORTFOLIO
 \*-----------------------------------*/
 
-.portfolio .slider { --item-gap: 16px; }
-
-.portfolio-card {
-  position: relative;
-  background-color: transparent;
-  transition: var(--cubic-ease-out);
-}
-
-.portfolio-card .img-cover { transition: var(--cubic-ease-out); }
-
-.portfolio-card .card-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  width: 100%;
-  transform: translate(-55%, -50%);
-  opacity: 0;
-  transition: var(--cubic-ease-out);
-  z-index: 1;
-}
-
-.portfolio-card .card-text { color: var(--white); }
-
-.portfolio-card:is(:hover, :focus-within) .img-cover {
-  opacity: 0.1;
-  transform: scale(0.95);
-}
-
-.portfolio-card:is(:hover, :focus-within) .card-content {
-  transform: translate(-50%, -50%);
-  opacity: 1;
-}
-
-
-
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
 .blog-list {
   display: grid;
   gap: 60px;
@@ -829,57 +810,8 @@ body.nav-active { overflow: hidden; }
 
 
 
-/*  F O O T E R */
+/* C O N T A C T*/
 /* *********************/
-.social-list {
-  display: flex;
-  gap: 10px;
-  padding-left: 20px;
-  align-items: center;
-  justify-content: center;
-}
-@media (max-width: 1201px) {
-  .social-list {
-    padding-left: 0px;
-  }
-}
-.social-link {
-  width: 45px;
-  height: 45px;
-  display: grid;
-  place-items: center;
-  border: 2px solid var(--white_a10);
-  border-radius: var(--radius-circle);
-  color: var(--white);
-  transition: var(--transition-1);
-}
-
-.social-link:is(:hover, :focus-visible) { border-color: var(--white);  }
-
-footer {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: var(--raisin-black);
-  height: auto;
-  width: 100vw;
-  color: #fff;
-}
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.footer-content p {
-  max-width: 500px;
-  margin: 10px auto;
-  line-height: 28px;
-  font-size: 14px;
-}
-/* CONTACT */
 
 #contact #contact-info {
   display: flex;
@@ -954,9 +886,9 @@ a:hover {
   }
   .hero-title {
     text-transform: uppercase;
-    font-size: 30px; 
+    font-size: 30px;
     font-weight: var(--fw-800);
-    margin: 0; 
+    margin: 0;
   }
 }
 
@@ -969,7 +901,6 @@ a:hover {
   padding: 1rem;
   border-radius: 2rem;
   background: rgba(0, 0, 0, 0);
-  
 }
 
 .form-group {
@@ -1010,7 +941,7 @@ a:hover {
   top: -10px;
   left: 15px;
   font-size: 16px;
-  background-color: #17181C;
+  background-color: #17181c;
 }
 
 #contact {
@@ -1033,7 +964,6 @@ a:hover {
 .form-group {
   position: relative;
   margin-bottom: 4rem;
-  
 }
 
 .form-group input,
@@ -1071,7 +1001,7 @@ a:hover {
   top: -10px;
   left: 15px;
   font-size: 18px;
-  background-color:#17181C;
+  background-color: #17181c;
 }
 
 .button {
@@ -1113,6 +1043,60 @@ a:hover {
     font-size: 1rem;
     font-size: 15px;
   }
+}
+
+/* F O O T E R */
+/* *********************/
+.social-list {
+  display: flex;
+  gap: 10px;
+  padding-left: 20px;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1201px) {
+  .social-list {
+    padding-left: 0px;
+  }
+}
+
+.social-link {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--white_a10);
+  border-radius: var(--radius-circle);
+  color: var(--white);
+  transition: var(--transition-1);
+}
+
+.social-link:is(:hover, :focus-visible) {
+  border-color: var(--white);
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--raisin-black);
+  height: auto;
+  width: 100vw;
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
 }
 
 .whatsapp_float {
