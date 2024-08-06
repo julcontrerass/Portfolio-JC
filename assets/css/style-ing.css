@@ -764,6 +764,7 @@ body.nav-active {
   animation: scroll 40s linear infinite;
   -webkit-animation: scroll 40s linear infinite;
   width: calc(200px * 14);
+  margin-top: 50px;
 }
 
 .slider .slide {
@@ -782,6 +783,12 @@ body.nav-active {
   100% {
     -webkit-transform: translateX(calc(-200px * 7));
     transform: translateX(calc(-200px * 7));
+  }
+}
+
+@media (max-width: 768px) {
+  .slider .slide-track {
+    width: calc(100px * 14);
   }
 }
 
@@ -822,7 +829,7 @@ body.nav-active {
 .tech-icons {
   display: flex;
   gap: 8px;
-  margin: 20px;
+  margin-bottom: 20px;  
 }
 
 .tech-icons img {
