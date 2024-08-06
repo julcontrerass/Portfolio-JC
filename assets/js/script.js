@@ -169,7 +169,7 @@ for (let i = 0, len = sliders.length; i < len; i++) {
 
 
 /**
-   * aviso de mail en espanol
+   * EMAil
    */
 document.getElementById('contactForm').addEventListener('submit', async function(event) {
   event.preventDefault();
@@ -215,53 +215,10 @@ document.getElementById('contactForm').addEventListener('submit', async function
   }
 });
 
-/**
- * aviso de mail en espanol
-*/
- document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contactForm');
-
-    // Mensajes en diferentes idiomas
-    const messages = {
-      en: {
-        success: 'Your message has been sent successfully!',
-        error: 'There was an error sending your message. Please try again.'
-      },
-      es: {
-        success: '¡Tu mensaje ha sido enviado exitosamente!',
-        error: 'Hubo un error al enviar tu mensaje. Por favor, intenta de nuevo.'
-      }
-    };
-
-    // Detectar el idioma del navegador
-    const userLang = navigator.language || navigator.userLanguage;
-    const lang = userLang.startsWith('es') ? 'es' : 'en'; // Asume inglés por defecto
-
-    // Evento de envío del formulario
-    form.addEventListener('submit', function(event) {
-      event.preventDefault(); // Previene el envío por defecto
-
-      fetch(form.action, {
-        method: form.method,
-        body: new FormData(form),
-      })
-      .then(response => {
-        if (response.ok) {
-          alert(messages[lang].success); // Muestra mensaje de éxito en el idioma correspondiente
-        } else {
-          alert(messages[lang].error); // Muestra mensaje de error en el idioma correspondiente
-        }
-      })
-      .catch(() => {
-        alert(messages[lang].error); // Muestra mensaje de error en caso de excepción
-      });
-    });
-  });
 
 /**
  *  ScrollReveal
 */
-
 
 document.addEventListener('DOMContentLoaded', function() {
   ScrollReveal().reveal('.blog-card', {

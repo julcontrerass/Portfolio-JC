@@ -548,19 +548,21 @@ body.nav-active {
 
 .hero {
   padding-block-start: 130px;
+  position: relative; 
 }
 
 .hero-names {
-  display: flex; 
+  display: flex;
   gap: 20px;
 }
 
 .hero-title {
   text-transform: uppercase;
-  font-size: 40px; 
+  font-size: 40px;
   font-weight: var(--fw-800);
-  margin: 0; 
+  margin: 0;
 }
+
 .hero-subtitle2 {
   font-size: var(--fs-8);
   text-transform: uppercase;
@@ -570,6 +572,7 @@ body.nav-active {
   line-height: 1.5em;
   font-size: 20px;
 }
+
 .hero-subtitle {
   font-size: var(--fs-8);
   text-transform: uppercase;
@@ -588,43 +591,33 @@ body.nav-active {
 }
 
 @keyframes blobAnim {
-  0%,
-  100% {
+  0%, 100% {
     border-radius: var(--blob-radius);
   }
-
   10% {
     border-radius: 33% 67% 50% 50% / 43% 39% 61% 57%;
   }
-
   20% {
     border-radius: 51% 49% 31% 69% / 65% 39% 61% 35%;
   }
-
   30% {
     border-radius: 51% 49% 56% 44% / 45% 39% 61% 55%;
   }
-
   40% {
     border-radius: 66% 34% 33% 67% / 48% 71% 39% 52%;
   }
-
   50% {
     border-radius: 46% 54% 33% 67% / 48% 30% 70% 52%;
   }
-
   60% {
     border-radius: 46% 54% 56% 44% / 48% 30% 70% 52%;
   }
-
   70% {
     border-radius: 46% 54% 56% 44% / 65% 53% 47% 35%;
   }
-
   80% {
     border-radius: 67% 33% 56% 44% / 37% 53% 47% 63%;
   }
-
   90% {
     border-radius: 46% 54% 32% 68% / 37% 53% 47% 63%;
   }
@@ -636,6 +629,46 @@ body.nav-active {
 
 .hero .btn {
   margin-inline: auto;
+}
+
+.scroll-down {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--white); 
+}
+
+.scroll-down img {
+  width: 24px; 
+  height: auto;
+  margin-right: 8px; 
+  filter: invert(100%) brightness(200%);
+}
+
+.scroll-down p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.scroll-down ion-icon {
+  margin-left: 8px; 
+  font-size: 24px; 
+  animation: blink 1s infinite; 
+  color: var(--white);
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /*-----------------------------------*\
@@ -723,14 +756,15 @@ body.nav-active {
   #TECH SKILLS
 \*-----------------------------------*/
 
-.slide{
+.slide {
   background-color: #17181c;
   width: 100%;
   height: auto;
   margin: auto;
   overflow: hidden;
 }
-.service-card {
+
+.skills-card {
   position: relative;
   background-color: var(--raisin-black);
   height: 100%;
@@ -738,27 +772,27 @@ body.nav-active {
   transition: var(--transition-2);
 }
 
-.service-card .card-icon ion-icon {
+.skills-card .card-icon ion-icon {
   color: var(--content-color, var(--white));
   font-size: 6rem;
   --ionicon-stroke-width: 15px;
 }
 
-.service-card .card-title {
+.skills-card .card-title {
   color: var(--content-color, var(--white));
   margin-block: 20px;
 }
 
-.service-card .card-text {
+.skills-card .card-text {
   color: var(--content-color);
 }
 
-.service-card:is(:hover, :focus-within) {
+.skills-card:is(:hover, :focus-within) {
   background-color: var(--white);
   --content-color: var(--raisin-black);
 }
 
-.slider{
+.slider {
   background-color: #17181c;
   width: 100%;
   height: auto;
@@ -792,9 +826,24 @@ body.nav-active {
     transform: translateX(calc(-200px * 7));
   }
 }
+
+/* Media Queries */
 @media (max-width: 768px) {
   .slider .slide-track {
     width: calc(100px * 14);
+  }
+
+  .slider-controls {
+    display: none;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-card {
+    padding: 30px 20px;
   }
 }
 
@@ -1176,9 +1225,7 @@ footer {
     margin-inline: auto;
   }
 
-  .slider {
-    --slider-items: 2;
-  }
+
 
   /**
    * PORTFOLIO
@@ -1265,19 +1312,7 @@ footer {
     text-shadow: 2px 2px 0 var(--eerie-black);
   }
 
-  /**
-   * SKILL
-   */
 
-  .skills-wrapper {
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    gap: 40px;
-  }
-
-  .skills .btn {
-    margin-block-end: 0;
-  }
 
   /**
    * PORTFOLIO
@@ -1337,17 +1372,7 @@ footer {
     --fs-8: 1.4rem;
   }
 
-  /**
-   * SKILL
-   */
 
-  .skills .section-title {
-    max-width: 16ch;
-  }
-
-  .skills-wrapper {
-    gap: 10%;
-  }
 
   /**
    * PORTFOLIO

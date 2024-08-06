@@ -160,15 +160,29 @@
             </a>
           </div>
         </div>
+        <div class="scroll-down">
+          <img src="/assets/images/scroll.svg" alt="Scroll down" />
+          <p>Scroll down</p>
+          <a href="#Educacion"
+            ><ion-icon name="chevron-down-outline"></ion-icon
+          ></a>
+        </div>
       </section>
       <!-- 
         - #EDUCATION
       -->
-      <section class="service" id="Educacion" aria-labelledby="service-label">
+      <section
+        class="Education"
+        id="Educacion"
+        aria-labelledby="Education-label"
+      >
         <div class="container separation">
           <div>
             <p class="section-subtitle reveal section-position">My Studies</p>
-            <h2 class="h2 section-title reveal section-position" id="service-label">
+            <h2
+              class="h2 section-title reveal section-position"
+              id="Education-label"
+            >
               Education
             </h2>
           </div>
@@ -181,7 +195,7 @@
               </div>
               <div class="box">
                 <div class="year">September 11 - October 2, 2023</div>
-                <h4>Microservices Architecture </h4>
+                <h4>Microservices Architecture</h4>
                 <p>Soy Henry</p>
                 <a href="/assets/images/certificatebackend.pdf" class="botton"
                   >View Certificate</a
@@ -210,16 +224,22 @@
       <!-- 
         - #SKILLS
       -->
-      <section class="service" id="TeckSkills" aria-labelledby="service-label">
+      <section class="skills" id="TeckSkills" aria-labelledby="skills-label">
         <div class="container separation">
-          <p class="section-subtitle reveal section-position">Technologies</p>
-          <h2 class="h2 section-title reveal section-position" id="service-label">
-            Tech Skills
-          </h2>
+          <div>
+            <p class="section-subtitle reveal section-position">Tecnologías</p>
+            <h2
+              class="h2 section-title reveal section-position"
+              id="skills-label"
+            >
+              Tech Skills
+            </h2>
+          </div>
+
           <div class="slider" data-slider>
-            <ul class="slider-container service-list" data-slider-container>
+            <ul class="slider-container skills-list" data-slider-container>
               <li class="slider-item" data-slider-item>
-                <div class="service-card">
+                <div class="skills-card">
                   <div class="card-icon">
                     <ion-icon name="desktop-outline"></ion-icon>
                   </div>
@@ -234,7 +254,7 @@
                 </div>
               </li>
               <li class="slider-item" data-slider-item>
-                <div class="service-card">
+                <div class="skills-card">
                   <div class="card-icon">
                     <ion-icon name="code-outline"></ion-icon>
                   </div>
@@ -246,24 +266,24 @@
                 </div>
               </li>
               <li class="slider-item" data-slider-item>
-                <div class="service-card">
+                <div class="skills-card">
                   <div class="card-icon">
                     <ion-icon name="server-outline"></ion-icon>
                   </div>
                   <h3 class="h3 card-title">
-                    Database
+                    Base De Datos
                     <hr />
                   </h3>
                   <p class="card-text">MongoDB | PostgreSQL | Firebase</p>
                 </div>
               </li>
               <li class="slider-item" data-slider-item>
-                <div class="service-card">
+                <div class="skills-card">
                   <div class="card-icon">
                     <ion-icon name="construct-outline"></ion-icon>
                   </div>
                   <h3 class="h3 card-title">
-                    Tools
+                    Herramientas
                     <hr />
                   </h3>
                   <p class="card-text">Jira | Git | VSCode | Code::Block</p>
@@ -291,7 +311,7 @@
           </div>
         </div>
       </section>
-      <div class="slider">
+      <div class="slider reveal">
         <div class="slide-track">
           <div class="slide">
             <img src="/assets/images/icons8-github.svg" alt="" />
@@ -343,19 +363,39 @@
           </div>
         </div>
       </div>
+
       <!-- 
         - #PORTFOLIO
       -->
 
-      <section class="section portfolio" aria-labelledby="portfolio-label" id="Portfolio">
+      <section
+        class="section portfolio"
+        aria-labelledby="portfolio-label"
+        id="Portfolio"
+      >
         <div class="container separation">
-          <p class="section-subtitle reveal section-position" id="portfolio-label">MY PROJECTS</p>
+          <p
+            class="section-subtitle reveal section-position"
+            id="portfolio-label"
+          >
+            MY PROJECTS
+          </p>
           <h2 class="h2 section-title reveal section-position">Portfolio</h2>
           <ul class="portfolio-list">
             <li>
               <div class="portfolio-card">
-                <figure class="card-banner img-holder" style="--width: 700; --height: 470">
-                  <img src="./assets/images/portfolio-1.jpg" width="700" height="470" loading="lazy" alt="" class="img-cover" />
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 700; --height: 470"
+                >
+                  <img
+                    src="./assets/images/portfolio-1.jpg"
+                    width="700"
+                    height="470"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
                 </figure>
                 <div class="card-content">
                   <time class="time" datetime="2022-06-24">
@@ -363,14 +403,24 @@
                   </time>
                   <div>
                     <h3 class="h3 card-title">Hundred or straight</h3>
-                    <p class="card-text">Group final project for Programming 1 UTN</p>
                     <p class="card-text">
-                      The task is to create a dice game called CIEN or Escalera, which can be developed for one player or two players. The program must be done in a CodeBlock project in C/C++ and include a main menu that allows starting a new game for one player, a new game for two players, showing the highest score, and the option to exit the game.
+                      Group final project for Programming 1 UTN
+                    </p>
+                    <p class="card-text">
+                      The task is to create a dice game called CIEN or Escalera,
+                      which can be developed for one player or two players. The
+                      program must be done in a CodeBlock project in C/C++ and
+                      include a main menu that allows starting a new game for
+                      one player, a new game for two players, showing the
+                      highest score, and the option to exit the game.
                     </p>
                     <div class="tech-icons">
                       <img src="/assets/images/icons8-c++.svg" alt="C++" />
                     </div>
-                    <a href="https://github.com/julcontrerass/CienOEscaleraUTN" class="btn has-before">
+                    <a
+                      href="https://github.com/julcontrerass/CienOEscaleraUTN"
+                      class="btn has-before"
+                    >
                       <span class="span">GitHub</span>
                       <ion-icon name="arrow-forward"></ion-icon>
                     </a>
@@ -380,8 +430,18 @@
             </li>
             <li>
               <div class="portfolio-card">
-                <figure class="card-banner img-holder" style="--width: 700; --height: 470">
-                  <img src="./assets/images/portfolio-2.jpg" width="700" height="470" loading="lazy" alt="" class="img-cover" />
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 700; --height: 470"
+                >
+                  <img
+                    src="./assets/images/portfolio-2.jpg"
+                    width="700"
+                    height="470"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
                 </figure>
                 <div class="card-content">
                   <time class="time" datetime="2022-06-27">
@@ -391,18 +451,32 @@
                     <h3 class="h3 card-title">Tic Tac Toe</h3>
                     <p class="card-text">Personal Project</p>
                     <p class="card-text">
-                      Creation of the Tic Tac Toe game where two users can play, and the winner will accumulate points. Made with JavaScript, React, and CSS.
+                      Creation of the Tic Tac Toe game where two users can play,
+                      and the winner will accumulate points. Made with
+                      JavaScript, React, and CSS.
                     </p>
                     <div class="tech-icons">
-                      <img src="/assets/images/icons8-javascript (1).svg" alt="JavaScript" />
-                      <img src="/assets/images/icons8-reaccionar.svg" alt="React" />
+                      <img
+                        src="/assets/images/icons8-javascript (1).svg"
+                        alt="JavaScript"
+                      />
+                      <img
+                        src="/assets/images/icons8-reaccionar.svg"
+                        alt="React"
+                      />
                       <img src="/assets/images/icons8-css3.svg" alt="CSS" />
                     </div>
-                    <a href="https://github.com/julcontrerass/Ta-Te-Ti" class="btn has-before">
+                    <a
+                      href="https://github.com/julcontrerass/Ta-Te-Ti"
+                      class="btn has-before"
+                    >
                       <span class="span">GitHub</span>
                       <ion-icon name="arrow-forward"></ion-icon>
                     </a>
-                    <a href="https://ta-te-ti-julcontrerass.vercel.app/" class="btn has-before">
+                    <a
+                      href="https://ta-te-ti-julcontrerass.vercel.app/"
+                      class="btn has-before"
+                    >
                       <span class="span">View</span>
                       <ion-icon name="arrow-forward"></ion-icon>
                     </a>
@@ -412,8 +486,18 @@
             </li>
             <li>
               <div class="portfolio-card">
-                <figure class="card-banner img-holder" style="--width: 700; --height: 470">
-                  <img src="./assets/images/portfolio-3.jpg" width="700" height="470" loading="lazy" alt="" class="img-cover" />
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 700; --height: 470"
+                >
+                  <img
+                    src="./assets/images/portfolio-3.jpg"
+                    width="700"
+                    height="470"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
                 </figure>
                 <div class="card-content">
                   <time class="time" datetime="2022-06-24">
@@ -423,20 +507,41 @@
                     <h3 class="h3 card-title">Nike E-commerce</h3>
                     <p class="card-text">Group final project for Henry</p>
                     <p class="card-text">
-                      E-commerce project with 6 teammates, which was aimed at selling Nike airforce products. It include: authentication, admin dashboard, user dashboard, shopping cart, payment via Mercado Pago, and many other features. In this project, languages such as React, Redux, CSS, Express were used, among others. Firebase was used as the database.
+                      E-commerce project with 6 teammates, which was aimed at
+                      selling Nike airforce products. It include:
+                      authentication, admin dashboard, user dashboard, shopping
+                      cart, payment via Mercado Pago, and many other features.
+                      In this project, languages such as React, Redux, CSS,
+                      Express were used, among others. Firebase was used as the
+                      database.
                     </p>
                     <div class="tech-icons">
-                      <img src="/assets/images/icons8-reaccionar.svg" alt="React" />
+                      <img
+                        src="/assets/images/icons8-reaccionar.svg"
+                        alt="React"
+                      />
                       <img src="/assets/images/icons8-redux.svg" alt="Redux" />
                       <img src="/assets/images/icons8-css3.svg" alt="CSS" />
-                      <img src="/assets/images/express-svgrepo-com.svg" alt="Express" />
-                      <img src="/assets/images/icons8-firebase.svg" alt="Express" />
+                      <img
+                        src="/assets/images/express-svgrepo-com.svg"
+                        alt="Express"
+                      />
+                      <img
+                        src="/assets/images/icons8-firebase.svg"
+                        alt="Express"
+                      />
                     </div>
-                    <a href="https://github.com/lauticometti/AirLand" class="btn has-before">
+                    <a
+                      href="https://github.com/lauticometti/AirLand"
+                      class="btn has-before"
+                    >
                       <span class="span">GitHub</span>
                       <ion-icon name="arrow-forward"></ion-icon>
                     </a>
-                    <a href="https://airland-9c55f.web.app/snkrs" class="btn has-before">
+                    <a
+                      href="https://airland-9c55f.web.app/snkrs"
+                      class="btn has-before"
+                    >
                       <span class="span">View</span>
                       <ion-icon name="arrow-forward"></ion-icon>
                     </a>
@@ -446,8 +551,18 @@
             </li>
             <li>
               <div class="portfolio-card">
-                <figure class="card-banner img-holder" style="--width: 700; --height: 470">
-                  <img src="./assets/images/portfolio-4.jpg" width="700" height="470" loading="lazy" alt="" class="img-cover" />
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 700; --height: 470"
+                >
+                  <img
+                    src="./assets/images/portfolio-4.jpg"
+                    width="700"
+                    height="470"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
                 </figure>
                 <div class="card-content">
                   <time class="time" datetime="2022-06-27">
@@ -457,16 +572,33 @@
                     <h3 class="h3 section-title">Countries</h3>
                     <p class="card-text">Individual project for Henry</p>
                     <p class="card-text">
-                      Individual project using the Countries API. The project consists of being able to visualize all the flags of the countries, view information about each of them, and create an activity to be carried out in any desired country. In this project, React, Redux, NodeJs, Express, Sequelize, and SQL were used.
+                      Individual project using the Countries API. The project
+                      consists of being able to visualize all the flags of the
+                      countries, view information about each of them, and create
+                      an activity to be carried out in any desired country. In
+                      this project, React, Redux, NodeJs, Express, Sequelize,
+                      and SQL were used.
                     </p>
                     <div class="tech-icons">
-                      <img src="/assets/images/icons8-reaccionar.svg" alt="React" />
+                      <img
+                        src="/assets/images/icons8-reaccionar.svg"
+                        alt="React"
+                      />
                       <img src="/assets/images/icons8-redux.svg" alt="Redux" />
-                      <img src="/assets/images/icons8-node-js.svg" alt="NodeJs" />
+                      <img
+                        src="/assets/images/icons8-node-js.svg"
+                        alt="NodeJs"
+                      />
                       <img src="/assets/images/icons8-css3.svg" alt="CSS" />
-                      <img src="/assets/images/icons8-postgresql.svg" alt="PostgreSQL" />
+                      <img
+                        src="/assets/images/icons8-postgresql.svg"
+                        alt="PostgreSQL"
+                      />
                     </div>
-                    <a href="https://github.com/julcontrerass/Countries-SoyHenry" class="btn has-before">
+                    <a
+                      href="https://github.com/julcontrerass/Countries-SoyHenry"
+                      class="btn has-before"
+                    >
                       <span class="span">GitHub</span>
                       <ion-icon name="arrow-forward"></ion-icon>
                     </a>
@@ -477,7 +609,7 @@
           </ul>
         </div>
       </section>
-      
+
       <!-- 
         - #CONTACT
       -->

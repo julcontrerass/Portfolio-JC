@@ -106,13 +106,12 @@
                   class="social-link"
                   target="_blank"
                 >
-                  <ion-icon name="logo-linkedin"></ion-icon>
+                  <ion-icon name="logo-LinkedIn"></ion-icon>
                 </a>
               </li>
             </ul>
           </ul>
         </nav>
-
         <div class="overlay" data-nav-toggler data-overlay></div>
       </div>
     </header>
@@ -131,7 +130,7 @@
                 src="./assets/images/hero-banner.jpg"
                 width="800"
                 height="800"
-                alt="julian contreras"
+                alt="Julian Contreras"
                 class="w-100"
               />
             </div>
@@ -165,14 +164,19 @@
             </a>
           </div>
         </div>
+        <div class="scroll-down">
+          <img src="/assets/images/scroll.svg" alt="Scroll down" />
+          <p>Deslizar hacia abajo</p>
+          <a href="#Educacion"><ion-icon name="chevron-down-outline"></ion-icon></a>
+        </div>
       </section>
 
       <!--- #EDUCACIÓN -->
-      <section class="service" id="Educacion" aria-labelledby="service-label">
+      <section class="Educacion" id="Educacion" aria-labelledby="educacion-label">
         <div class="container separation">
           <div>
             <p class="section-subtitle reveal section-position">Mis estudios</p>
-            <h2 class="h2 section-title reveal section-position" id="service-label">
+            <h2 class="h2 section-title reveal section-position" id="educacion-label">
               Educación
             </h2>
           </div>
@@ -218,19 +222,19 @@
       </section>
 
       <!--- #SKILLS-->
-      <section class="service" id="TeckSkills" aria-labelledby="service-label">
+      <section class="skills" id="TeckSkills" aria-labelledby="skills-label">
         <div class="container separation">
           <div>
             <p class="section-subtitle reveal section-position">Tecnologías</p>
-            <h2 class="h2 section-title reveal section-position" id="service-label">
-              Tech Skills
+            <h2 class="h2 section-title reveal section-position" id="skills-label">
+              Habilidades Técnicas
             </h2>
           </div>
-
+      
           <div class="slider" data-slider>
-            <ul class="slider-container service-list" data-slider-container>
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
+            <ul class="slider-container skills-list" data-slider-container>
+              <li class="slider-item reveal"  data-slider-item>
+                <div class="skills-card">
                   <div class="card-icon">
                     <ion-icon name="desktop-outline"></ion-icon>
                   </div>
@@ -239,13 +243,13 @@
                     <hr />
                   </h3>
                   <p class="card-text">
-                    Html5 | Css | Ajax | React Js | React Native | Redux | Hooks
-                    | Javascript
+                    Html5 | Css | Ajax | React Js | React Native | Redux | Hooks |
+                    Javascript
                   </p>
                 </div>
               </li>
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
+              <li class="slider-item reveal" data-slider-item>
+                <div class="skills-card">
                   <div class="card-icon">
                     <ion-icon name="code-outline"></ion-icon>
                   </div>
@@ -256,20 +260,20 @@
                   <p class="card-text">C++ | NODEJS | SEQUELIZE | EXPRESS</p>
                 </div>
               </li>
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
+              <li class="slider-item reveal" data-slider-item>
+                <div class="skills-card">
                   <div class="card-icon">
                     <ion-icon name="server-outline"></ion-icon>
                   </div>
                   <h3 class="h3 card-title">
-                    Base De Datos
+                    Bases de Datos
                     <hr />
                   </h3>
                   <p class="card-text">MongoDB | PostgreSQL | Firebase</p>
                 </div>
               </li>
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
+              <li class="slider-item reveal" data-slider-item>
+                <div class="skills-card">
                   <div class="card-icon">
                     <ion-icon name="construct-outline"></ion-icon>
                   </div>
@@ -282,19 +286,11 @@
               </li>
             </ul>
             <div class="slider-controls">
-              <button
-                class="slider-control prev"
-                data-slider-prev
-                aria-label="Slide to previous item"
-              >
+              <button class="slider-control prev" data-slider-prev aria-label="Deslizar al elemento anterior">
                 <div class="line"></div>
                 <div class="arrow"></div>
               </button>
-              <button
-                class="slider-control next"
-                data-slider-next
-                aria-label="Slide to next item"
-              >
+              <button class="slider-control next" data-slider-next aria-label="Deslizar al siguiente elemento">
                 <div class="line"></div>
                 <div class="arrow"></div>
               </button>
@@ -354,16 +350,18 @@
           </div>
         </div>
       </div>
+      
+      
 
       <!--- #PORTFOLIO --->
 
       <section class="section portfolio" aria-labelledby="portfolio-label" id="Portfolio">
         <div class="container separation">
           <p class="section-subtitle reveal section-position" id="portfolio-label">MIS PROYECTOS</p>
-          <h2 class="h2 section-title reveal section-position">Portafolio</h2>
+          <h2 class="h2 section-title reveal section-position">Portfolio</h2>
           <ul class="portfolio-list">
             <li>
-              <div class="portfolio-card">
+              <div class="portfolio-card reveal">
                 <figure class="card-banner img-holder" style="--width: 700; --height: 470">
                   <img src="./assets/images/portfolio-1.jpg" width="700" height="470" loading="lazy" alt="" class="img-cover" />
                 </figure>
@@ -389,7 +387,7 @@
               </div>
             </li>
             <li>
-              <div class="portfolio-card">
+              <div class="portfolio-card reveal">
                 <figure class="card-banner img-holder" style="--width: 700; --height: 470">
                   <img src="./assets/images/portfolio-2.jpg" width="700" height="470" loading="lazy" alt="" class="img-cover" />
                 </figure>
@@ -421,7 +419,7 @@
               </div>
             </li>
             <li>
-              <div class="portfolio-card">
+              <div class="portfolio-card reveal">
                 <figure class="card-banner img-holder" style="--width: 700; --height: 470">
                   <img src="./assets/images/portfolio-3.jpg" width="700" height="470" loading="lazy" alt="" class="img-cover" />
                 </figure>
@@ -455,7 +453,7 @@
               </div>
             </li>
             <li>
-              <div class="portfolio-card">
+              <div class="portfolio-card reveal">
                 <figure class="card-banner img-holder" style="--width: 700; --height: 470">
                   <img src="./assets/images/portfolio-4.jpg" width="700" height="470" loading="lazy" alt="" class="img-cover" />
                 </figure>
@@ -568,7 +566,7 @@
                 href="https://www.linkedin.com/in/juliancontreraslucero/"
                 class="social-link"
               >
-                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-LinkedIn"></ion-icon>
               </a>
             </li>
             <p>
