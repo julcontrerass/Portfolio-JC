@@ -135,10 +135,7 @@ body.nav-active {
   background: transparent;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: var(--white);
-  border-radius: 20px;
-}
+
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -410,17 +407,7 @@ body.nav-active {
   align-items: center;
 }
 
-.esp {
-  color: var(--white);
-  font-size: 13px;
-  font-weight: var(--fw-700);
-  padding-block: 13px;
-  transition: var(--transition-1);
-  margin-right: 7px;
-}
-.esp:is(:hover, :focus-visible) {
-  text-shadow: 1px 0 0 var(--eerie-black);
-}
+
 .eng {
   color: gray;
   font-size: 11px;
@@ -802,35 +789,49 @@ body.nav-active {
   #PORTFOLIO
 \*-----------------------------------*/
 
-.blog-list {
+.portfolio-list {
   display: grid;
   gap: 60px;
 }
 
-.blog-card {
+.portfolio-card {
   display: grid;
   gap: 40px;
 }
 
-.blog-card .card-content {
+.portfolio-card .card-content {
   display: flex;
   gap: 16px;
   padding-inline: 16px;
 }
 
-.blog-card .time {
+.portfolio-card .time {
   font-size: var(--fs-7);
 }
 
-.blog-card .time .span {
+.portfolio-card .time .span {
   color: var(--white);
   font-weight: var(--fw-700);
   line-height: 0.9;
 }
 
-.blog-card .card-text {
+.portfolio-card .card-text {
   margin-block: 20px;
 }
+
+.tech-icons {
+  display: flex;
+  gap: 8px;
+  margin: 20px;
+}
+
+.tech-icons img {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%);
+}
+
+
 /* C O N T A C T*/
 /* *********************/
 
@@ -1167,10 +1168,10 @@ footer {
   }
 
   /**
-   * BLOG
+   * PORTFOLIO
    */
 
-  .blog-card .card-content {
+  .portfolio-card .card-content {
     padding-inline: 32px;
     gap: 32px;
   }
@@ -1266,10 +1267,10 @@ footer {
   }
 
   /**
-   * BLOG
+   * PORTFOLIO
    */
 
-  .blog-card .card-title {
+  .portfolio-card .card-title {
     --fs-4: 2.7rem;
   }
 
@@ -1336,19 +1337,19 @@ footer {
   }
 
   /**
-   * BLOG
+   * PORTFOLIO
    */
 
-  .blog-card {
+  .portfolio-card {
     grid-template-columns: 1fr 1fr;
     gap: 24px;
   }
 
-  .blog-card .card-content {
+  .portfolio-card .card-content {
     padding: 32px;
   }
 
-  .blog-list li:nth-child(2n) .card-banner {
+  .portfolio-list li:nth-child(2n) .card-banner {
     order: 1;
   }
 }
